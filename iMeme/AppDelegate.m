@@ -102,6 +102,16 @@
     }
 }
 
+- (IBAction)onOpen:(id)sender {
+    NSOpenPanel* panel = [NSOpenPanel openPanel];
+    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", @"jpg", @"jpeg", nil]];
+    [panel setAllowsMultipleSelection:NO];
+    if ([panel runModal] == NSFileHandlingPanelOKButton) {
+        NSURL* url = [[panel URLs] objectAtIndex:0];
+        [self setPath:[url path]];
+    }
+}
+
 - (IBAction)onReset:(id)sender {
     [model reset];
     [headerAlignment selectSegmentWithTag:model.headerAlignment];
@@ -179,10 +189,7 @@ float heightForStringDrawing(NSString* myString, NSFont* myFont, float myWidth) 
 }
 
 - (void)updateImage {
-    // load image
-    NSString* path = [[NSBundle mainBundle] pathForImageResource:model.path];
-    NSImage* image = [[NSImage alloc] initWithContentsOfFile:path];
-    
+    NSImage* image = [[NSImage alloc] initWithContentsOfFile:model.path];
     [image lockFocus];
     NSSize size = [image size];
     int pad = 10;

@@ -21,6 +21,7 @@
         for (NSString* filename in paths) {
             NSString* path = [[filename lastPathComponent] stringByDeletingPathExtension];
             NSString* name = [[path stringByReplacingOccurrencesOfString:@"-" withString:@" "] capitalizedString];
+            path = [[NSBundle mainBundle] pathForImageResource:path];
             [items addObject:[[Template alloc] initWithName:name path:path]];
         }
     }
