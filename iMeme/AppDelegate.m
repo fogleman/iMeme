@@ -6,8 +6,6 @@
 //  Copyright (c) 2011 n/a. All rights reserved.
 //
 
-// IMGUR KEY: ba24197a8c1cbcff577fcad9bcfe0268
-
 #import "AppDelegate.h"
 #import "MultipartForm.h"
 #import "SBJson.h"
@@ -93,6 +91,8 @@
     [self updateImage];
 }
 
+
+
 - (IBAction)onSave:(id)sender {
     NSSavePanel* panel = [NSSavePanel savePanel];
     [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", nil]];
@@ -104,7 +104,7 @@
 
 - (IBAction)onOpen:(id)sender {
     NSOpenPanel* panel = [NSOpenPanel openPanel];
-    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", @"jpg", @"jpeg", nil]];
+    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", @"jpg", @"jpeg", @"bmp", @"gif", nil]];
     [panel setAllowsMultipleSelection:NO];
     if ([panel runModal] == NSFileHandlingPanelOKButton) {
         NSURL* url = [[panel URLs] objectAtIndex:0];
@@ -132,6 +132,8 @@
     NSString* redditUrl = [redditBaseUrl stringByAppendingString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:redditUrl]];
 }
+
+
 
 - (NSString*)upload {
     NSString* image = [[self getJPG] base64EncodedString];
