@@ -127,6 +127,10 @@
     [board setData:data forType:NSTIFFPboardType];
 }
 
+- (IBAction)copy:(id)sender {
+    [self onCopy:sender];
+}
+
 - (IBAction)onReset:(id)sender {
     [model reset];
     [headerAlignment selectSegmentWithTag:model.headerAlignment];
@@ -150,6 +154,11 @@
         NSString* redditUrl = [redditBaseUrl stringByAppendingString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
         [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:redditUrl]];
     }
+}
+
+- (IBAction)onWebsite:(id)sender {
+    NSString* url = @"http://www.michaelfogleman.com/memes/";
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
 
