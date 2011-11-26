@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6985CAB314803FC9006F806F /* copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6985CAB214803FC9006F806F /* copy.png */; };
 		69C2ECD2147EE60A00EC7161 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2ECD1147EE60A00EC7161 /* Cocoa.framework */; };
 		69C2ECDC147EE60A00EC7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C2ECDA147EE60A00EC7161 /* InfoPlist.strings */; };
 		69C2ECDE147EE60A00EC7161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C2ECDD147EE60A00EC7161 /* main.m */; };
@@ -100,6 +101,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6985CAB214803FC9006F806F /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy.png; sourceTree = "<group>"; };
 		69C2ECCD147EE60A00EC7161 /* iMeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C2ECD1147EE60A00EC7161 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		69C2ECD4147EE60A00EC7161 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -301,6 +303,7 @@
 		69C2ECEE147EE8D400EC7161 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6985CAB214803FC9006F806F /* copy.png */,
 				69F348E2147FD65C0054EA7F /* imgur.png */,
 				69F348E3147FD65C0054EA7F /* open.png */,
 				69F348E4147FD65C0054EA7F /* reddit.png */,
@@ -543,6 +546,7 @@
 				69F348E9147FD65C0054EA7F /* reddit.png in Resources */,
 				69F348EA147FD65C0054EA7F /* reset.png in Resources */,
 				69F348EB147FD65C0054EA7F /* save.png in Resources */,
+				6985CAB314803FC9006F806F /* copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

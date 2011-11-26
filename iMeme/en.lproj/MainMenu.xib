@@ -1307,7 +1307,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {700, 540}}</string>
+				<string key="NSWindowRect">{{0, 338}, {700, 540}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">iMeme</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1400,6 +1400,28 @@
 							<object class="NSCustomResource" key="NSToolbarItemImage">
 								<string key="NSClassName">NSImage</string>
 								<string key="NSResourceName">reddit</string>
+							</object>
+							<nil key="NSToolbarItemTarget"/>
+							<nil key="NSToolbarItemAction"/>
+							<string key="NSToolbarItemMinSize">{0, 0}</string>
+							<string key="NSToolbarItemMaxSize">{0, 0}</string>
+							<bool key="NSToolbarItemEnabled">YES</bool>
+							<bool key="NSToolbarItemAutovalidates">YES</bool>
+							<int key="NSToolbarItemTag">-1</int>
+							<bool key="NSToolbarIsUserRemovable">YES</bool>
+							<int key="NSToolbarItemVisibilityPriority">0</int>
+						</object>
+						<object class="NSToolbarItem" key="B37F5A27-7BBC-4C1C-A3B6-A433E0DECBA7" id="627886373">
+							<object class="NSMutableString" key="NSToolbarItemIdentifier">
+								<characters key="NS.bytes">B37F5A27-7BBC-4C1C-A3B6-A433E0DECBA7</characters>
+							</object>
+							<string key="NSToolbarItemLabel">Copy</string>
+							<string key="NSToolbarItemPaletteLabel">Copy</string>
+							<string key="NSToolbarItemToolTip"/>
+							<nil key="NSToolbarItemView"/>
+							<object class="NSCustomResource" key="NSToolbarItemImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">copy</string>
 							</object>
 							<nil key="NSToolbarItemTarget"/>
 							<nil key="NSToolbarItemAction"/>
@@ -1538,6 +1560,7 @@
 					<array class="NSMutableArray" key="NSToolbarIBAllowedItems">
 						<reference ref="459557983"/>
 						<reference ref="1060407598"/>
+						<reference ref="627886373"/>
 						<reference ref="285673469"/>
 						<reference ref="271280399"/>
 						<reference ref="126865107"/>
@@ -1549,6 +1572,7 @@
 					<array key="NSToolbarIBDefaultItems">
 						<reference ref="459557983"/>
 						<reference ref="1060407598"/>
+						<reference ref="627886373"/>
 						<reference ref="285673469"/>
 						<reference ref="447957727"/>
 						<reference ref="271280399"/>
@@ -2783,6 +2807,14 @@
 						<reference key="destination" ref="126865107"/>
 					</object>
 					<int key="connectionID">628</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">onCopy:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="627886373"/>
+					</object>
+					<int key="connectionID">631</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -4048,6 +4080,7 @@
 							<reference ref="285673469"/>
 							<reference ref="271280399"/>
 							<reference ref="126865107"/>
+							<reference ref="627886373"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -4094,6 +4127,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">623</int>
 						<reference key="object" ref="126865107"/>
+						<reference key="parent" ref="631741466"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">630</int>
+						<reference key="object" ref="627886373"/>
 						<reference key="parent" ref="631741466"/>
 					</object>
 				</array>
@@ -4279,6 +4317,7 @@
 				<string key="621.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="622.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="623.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="630.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4295,7 +4334,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">629</int>
+			<int key="maxID">631</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4417,6 +4456,7 @@
 			<string key="align-center">{16, 16}</string>
 			<string key="align-left">{16, 16}</string>
 			<string key="align-right">{16, 16}</string>
+			<string key="copy">{102.40000000000001, 102.40000000000001}</string>
 			<string key="imgur">{32.395949255088134, 32.395949255088134}</string>
 			<string key="open">{102.40000000000001, 102.40000000000001}</string>
 			<string key="reddit">{32, 32}</string>

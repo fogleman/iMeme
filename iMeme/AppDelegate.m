@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MultipartForm.h"
 #import "SBJson.h"
+#import "NSData+Base64.h"
 
 @implementation AppDelegate
 
@@ -43,6 +44,13 @@
     NSData* imageData = [[imageView image] TIFFRepresentation];
     NSBitmapImageRep* rep = [NSBitmapImageRep imageRepWithData:imageData];
     NSData* data = [rep representationUsingType:NSJPEGFileType properties:nil];
+    return data;
+}
+
+- (NSData*)getTIF {
+    NSData* imageData = [[imageView image] TIFFRepresentation];
+    NSBitmapImageRep* rep = [NSBitmapImageRep imageRepWithData:imageData];
+    NSData* data = [rep representationUsingType:NSTIFFFileType properties:nil];
     return data;
 }
 
@@ -112,6 +120,13 @@
     }
 }
 
+- (IBAction)onCopy:(id)sender {
+    NSPasteboard* board = [NSPasteboard generalPasteboard];
+    NSData* data = [self getTIF];
+    [board clearContents];
+    [board setData:data forType:NSTIFFPboardType];
+}
+
 - (IBAction)onReset:(id)sender {
     [model reset];
     [headerAlignment selectSegmentWithTag:model.headerAlignment];
@@ -123,19 +138,24 @@
 
 - (IBAction)onImgur:(id)sender {
     NSString* url = [self upload];
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+    if (url) {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 - (IBAction)onReddit:(id)sender {
     NSString* url = [self upload];
-    NSString* redditBaseUrl = @"http://www.reddit.com/r/AdviceAnimals/submit?url=";
-    NSString* redditUrl = [redditBaseUrl stringByAppendingString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:redditUrl]];
+    if (url) {
+        NSString* redditBaseUrl = @"http://www.reddit.com/r/AdviceAnimals/submit?url=";
+        NSString* redditUrl = [redditBaseUrl stringByAppendingString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:redditUrl]];
+    }
 }
 
 
 
 - (NSString*)upload {
+    // TODO: asynchronous thread
     NSString* image = [[self getJPG] base64EncodedString];
     NSURL* url = [NSURL URLWithString:@"http://api.imgur.com/2/upload.json"];
     MultipartForm *form = [[MultipartForm alloc] initWithURL:url];
@@ -146,6 +166,11 @@
     NSURLResponse* response;
     NSError* error;
     NSData* data = [NSURLConnection sendSynchronousRequest:postRequest returningResponse:&response error:&error];
+    if (!data) {
+        NSAlert* alert = [NSAlert alertWithError:error];
+        [alert beginSheetModalForWindow:_window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+        return nil;
+    }
     SBJsonParser* parser = [[SBJsonParser alloc] init];
     NSDictionary* object = [parser objectWithData:data];
     [parser release];
@@ -177,10 +202,10 @@ float heightForStringDrawing(NSString* myString, NSFont* myFont, float myWidth) 
     [style setMaximumLineHeight:points * 1.2f];
     [attrs setValue:style forKey:NSParagraphStyleAttributeName];
     [attrs setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
-    int n = 5;
+    int n = 4;
     for (int dy = -n; dy <= n; dy++) {
         for (int dx = -n; dx <= n; dx++) {
-            if (dx * dx + dy * dy > n * n) {
+            if (dx * dx + dy * dy > (n + 1) * (n + 1)) {
                 continue;
             }
             [text drawInRect:NSRectFromCGRect(CGRectOffset(rect, dx, dy)) withAttributes:attrs];
