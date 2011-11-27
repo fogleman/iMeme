@@ -778,7 +778,7 @@
 							</object>
 						</object>
 					</dictionary>
-					<array class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<array key="NSToolbarIBAllowedItems">
 						<reference ref="285673469"/>
 						<reference ref="459557983"/>
 						<reference ref="1060407598"/>
@@ -1162,12 +1162,18 @@
 								<array class="NSMutableArray" key="NSSegmentImages">
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<string key="NSSegmentItemLabel">-</string>
+										<object class="NSCustomResource" key="NSSegmentItemImage" id="330189373">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">smaller</string>
+										</object>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<string key="NSSegmentItemLabel">+</string>
+										<object class="NSCustomResource" key="NSSegmentItemImage" id="186081452">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">bigger</string>
+										</object>
 										<int key="NSSegmentItemTag">1</int>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
@@ -1195,12 +1201,12 @@
 								<array class="NSMutableArray" key="NSSegmentImages">
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<string key="NSSegmentItemLabel">-</string>
+										<reference key="NSSegmentItemImage" ref="330189373"/>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<string key="NSSegmentItemLabel">+</string>
+										<reference key="NSSegmentItemImage" ref="186081452"/>
 										<int key="NSSegmentItemTag">1</int>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
@@ -2349,10 +2355,10 @@
 				<string key="558.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="559.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="0" key="560.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
+				<integer value="1" key="560.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
 				<string key="560.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="561.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="0" key="562.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
+				<integer value="1" key="562.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
 				<string key="562.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="573.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2508,6 +2514,7 @@
 			<string key="align-center">{16, 16}</string>
 			<string key="align-left">{16, 16}</string>
 			<string key="align-right">{16, 16}</string>
+			<string key="bigger">{16, 16}</string>
 			<string key="copy">{102.40000000000001, 102.40000000000001}</string>
 			<string key="icon32">{32, 32}</string>
 			<string key="imgur">{32.395949255088134, 32.395949255088134}</string>
@@ -2516,6 +2523,7 @@
 			<string key="print">{102.40000000000001, 102.40000000000001}</string>
 			<string key="reddit">{32, 32}</string>
 			<string key="save">{102.40000000000001, 102.40000000000001}</string>
+			<string key="smaller">{16, 16}</string>
 		</dictionary>
 	</data>
 </archive>
