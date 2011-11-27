@@ -11,6 +11,7 @@
 		6932731014814E670090BA14 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 6932730E14814E670090BA14 /* new.png */; };
 		6932731114814E670090BA14 /* print.png in Resources */ = {isa = PBXBuildFile; fileRef = 6932730F14814E670090BA14 /* print.png */; };
 		6966257E1481817A00F49E2A /* icon32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6966257D1481817A00F49E2A /* icon32.png */; };
+		696625811481C56800F49E2A /* chemistry-cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 696625801481C56800F49E2A /* chemistry-cat.jpeg */; };
 		6985CAB314803FC9006F806F /* copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6985CAB214803FC9006F806F /* copy.png */; };
 		69C2ECD2147EE60A00EC7161 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2ECD1147EE60A00EC7161 /* Cocoa.framework */; };
 		69C2ECDC147EE60A00EC7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C2ECDA147EE60A00EC7161 /* InfoPlist.strings */; };
@@ -109,6 +110,7 @@
 		6932730E14814E670090BA14 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		6932730F14814E670090BA14 /* print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print.png; sourceTree = "<group>"; };
 		6966257D1481817A00F49E2A /* icon32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon32.png; sourceTree = "<group>"; };
+		696625801481C56800F49E2A /* chemistry-cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chemistry-cat.jpeg"; sourceTree = "<group>"; };
 		6985CAB214803FC9006F806F /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy.png; sourceTree = "<group>"; };
 		69C2ECCD147EE60A00EC7161 /* iMeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C2ECD1147EE60A00EC7161 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -311,6 +313,7 @@
 		69C2ECEE147EE8D400EC7161 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				696625801481C56800F49E2A /* chemistry-cat.jpeg */,
 				6966257D1481817A00F49E2A /* icon32.png */,
 				6932730E14814E670090BA14 /* new.png */,
 				6932730F14814E670090BA14 /* print.png */,
@@ -563,6 +566,7 @@
 				6932731014814E670090BA14 /* new.png in Resources */,
 				6932731114814E670090BA14 /* print.png in Resources */,
 				6966257E1481817A00F49E2A /* icon32.png in Resources */,
+				696625811481C56800F49E2A /* chemistry-cat.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

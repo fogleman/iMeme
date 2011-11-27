@@ -211,7 +211,7 @@ float heightForStringDrawing(NSString* myString, NSFont* myFont, float myWidth) 
     [style setMaximumLineHeight:points * 1.2f];
     [attrs setValue:style forKey:NSParagraphStyleAttributeName];
     [attrs setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
-    int n = 4;
+    int n = 3;
     for (int dy = -n; dy <= n; dy++) {
         for (int dx = -n; dx <= n; dx++) {
             if (dx * dx + dy * dy > (n + 1) * (n + 1)) {
