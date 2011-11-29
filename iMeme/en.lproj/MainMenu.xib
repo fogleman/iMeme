@@ -1052,7 +1052,7 @@
 						<object class="NSSegmentedControl" id="600861024">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{578, 49}, {104, 24}}</string>
+							<string key="NSFrame">{{580, 51}, {100, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="636122553"/>
@@ -1100,13 +1100,13 @@
 									</object>
 								</array>
 								<int key="NSSelectedSegment">1</int>
-								<int key="NSSegmentStyle">1</int>
+								<int key="NSSegmentStyle">6</int>
 							</object>
 						</object>
 						<object class="NSSegmentedControl" id="1031245475">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{578, 17}, {104, 24}}</string>
+							<string key="NSFrame">{{580, 19}, {100, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -1141,13 +1141,13 @@
 									</object>
 								</array>
 								<int key="NSSelectedSegment">1</int>
-								<int key="NSSegmentStyle">1</int>
+								<int key="NSSegmentStyle">6</int>
 							</object>
 						</object>
 						<object class="NSSegmentedControl" id="230230191">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{503, 49}, {71, 24}}</string>
+							<string key="NSFrame">{{505, 51}, {67, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="600861024"/>
@@ -1162,17 +1162,17 @@
 								<array class="NSMutableArray" key="NSSegmentImages">
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<object class="NSCustomResource" key="NSSegmentItemImage" id="330189373">
+										<object class="NSCustomResource" key="NSSegmentItemImage" id="122819931">
 											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">smaller</string>
+											<string key="NSResourceName">minus</string>
 										</object>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<object class="NSCustomResource" key="NSSegmentItemImage" id="186081452">
+										<object class="NSCustomResource" key="NSSegmentItemImage" id="584170404">
 											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">bigger</string>
+											<string key="NSResourceName">plus</string>
 										</object>
 										<int key="NSSegmentItemTag">1</int>
 										<int key="NSSegmentItemImageScaling">0</int>
@@ -1180,13 +1180,13 @@
 								</array>
 								<int key="NSSelectedSegment">1</int>
 								<int key="NSTrackingMode">2</int>
-								<int key="NSSegmentStyle">1</int>
+								<int key="NSSegmentStyle">6</int>
 							</object>
 						</object>
 						<object class="NSSegmentedControl" id="934267530">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{503, 17}, {71, 24}}</string>
+							<string key="NSFrame">{{505, 19}, {67, 23}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="1031245475"/>
@@ -1201,19 +1201,19 @@
 								<array class="NSMutableArray" key="NSSegmentImages">
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<reference key="NSSegmentItemImage" ref="330189373"/>
+										<reference key="NSSegmentItemImage" ref="122819931"/>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 									<object class="NSSegmentItem">
 										<double key="NSSegmentItemWidth">32</double>
-										<reference key="NSSegmentItemImage" ref="186081452"/>
+										<reference key="NSSegmentItemImage" ref="584170404"/>
 										<int key="NSSegmentItemTag">1</int>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 								</array>
 								<int key="NSSelectedSegment">1</int>
 								<int key="NSTrackingMode">2</int>
-								<int key="NSSegmentStyle">1</int>
+								<int key="NSSegmentStyle">6</int>
 							</object>
 						</object>
 					</array>
@@ -1970,10 +1970,10 @@
 							<reference ref="360172510"/>
 							<reference ref="636122553"/>
 							<reference ref="1043655887"/>
-							<reference ref="1031245475"/>
-							<reference ref="600861024"/>
 							<reference ref="230230191"/>
 							<reference ref="934267530"/>
+							<reference ref="600861024"/>
+							<reference ref="1031245475"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -2358,7 +2358,7 @@
 				<integer value="1" key="560.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
 				<string key="560.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="561.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1" key="562.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
+				<integer value="0" key="562.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
 				<string key="562.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="573.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2514,16 +2514,16 @@
 			<string key="align-center">{16, 16}</string>
 			<string key="align-left">{16, 16}</string>
 			<string key="align-right">{16, 16}</string>
-			<string key="bigger">{16, 16}</string>
 			<string key="copy">{102.40000000000001, 102.40000000000001}</string>
 			<string key="icon32">{32, 32}</string>
 			<string key="imgur">{32.395949255088134, 32.395949255088134}</string>
+			<string key="minus">{8, 8}</string>
 			<string key="new">{102.40000000000001, 102.40000000000001}</string>
 			<string key="open">{102.40000000000001, 102.40000000000001}</string>
+			<string key="plus">{8, 8}</string>
 			<string key="print">{102.40000000000001, 102.40000000000001}</string>
 			<string key="reddit">{32, 32}</string>
 			<string key="save">{102.40000000000001, 102.40000000000001}</string>
-			<string key="smaller">{16, 16}</string>
 		</dictionary>
 	</data>
 </archive>
