@@ -163,27 +163,26 @@
 
 
 
-- (NSString*)upload {
-    // TODO: asynchronous thread
-    NSString* image = [[self getJPG] base64EncodedString];
-    NSURL* url = [NSURL URLWithString:@"http://api.imgur.com/2/upload.json"];
-    MultipartForm *form = [[MultipartForm alloc] initWithURL:url];
+- (NSString *)upload {
+    // TODO: asynchronous
+    NSString *imageData = [[self getJPG] base64EncodedString];
+    NSURL *url = [NSURL URLWithString:@"http://api.imgur.com/2/upload.json"];
+    MultipartForm *form = [[[MultipartForm alloc] initWithURL:url] autorelease];
     [form addFormField:@"key" withStringData:@"ba24197a8c1cbcff577fcad9bcfe0268"];
-    [form addFormField:@"image" withStringData:image];
+    [form addFormField:@"image" withStringData:imageData];
     [form addFormField:@"type" withStringData:@"base64"];
-    NSMutableURLRequest* postRequest = [form mpfRequest];
-    NSURLResponse* response;
-    NSError* error;
-    NSData* data = [NSURLConnection sendSynchronousRequest:postRequest returningResponse:&response error:&error];
+    NSMutableURLRequest *postRequest = [form mpfRequest];
+    NSURLResponse *response;
+    NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:postRequest returningResponse:&response error:&error];
     if (!data) {
-        NSAlert* alert = [NSAlert alertWithError:error];
+        NSAlert *alert = [NSAlert alertWithError:error];
         [alert beginSheetModalForWindow:_window modalDelegate:nil didEndSelector:nil contextInfo:nil];
         return nil;
     }
-    SBJsonParser* parser = [[SBJsonParser alloc] init];
-    NSDictionary* object = [parser objectWithData:data];
-    [parser release];
-    NSString* result = [[[object valueForKey:@"upload"] valueForKey:@"links"] valueForKey:@"original"];
+    SBJsonParser *parser = [[[SBJsonParser alloc] init] autorelease];
+    NSDictionary *object = [parser objectWithData:data];
+    NSString *result = [[[object valueForKey:@"upload"] valueForKey:@"links"] valueForKey:@"original"];
     return result;
 }
 
@@ -201,12 +200,11 @@ float heightForStringDrawing(NSString* myString, NSFont* myFont, float myWidth) 
     return [layoutManager usedRectForTextContainer:textContainer].size.height;
 }
 
-- (void)drawText:(NSString*)text withRect:(CGRect)rect andPoints:(int)points andAlignment:(NSUInteger)alignment {
-    //text = [text substringToIndex:MIN(160, [text length])];
-    NSMutableDictionary* attrs = [NSMutableDictionary dictionary];
-    NSFont* font = [NSFont fontWithName:@"Impact" size:points];
+- (void)drawText:(NSString *)text withRect:(CGRect)rect andPoints:(int)points andAlignment:(NSUInteger)alignment {
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    NSFont *font = [NSFont fontWithName:@"Impact" size:points];
     [attrs setValue:font forKey:NSFontAttributeName];
-    NSMutableParagraphStyle* style = [[[NSMutableParagraphStyle alloc] init] autorelease];
+    NSMutableParagraphStyle *style = [[[NSMutableParagraphStyle alloc] init] autorelease];
     [style setAlignment:alignment];
     [style setMaximumLineHeight:points * 1.2f];
     [attrs setValue:style forKey:NSParagraphStyleAttributeName];
