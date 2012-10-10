@@ -21,7 +21,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.path = [[NSBundle mainBundle] pathForImageResource:@"advice-dog"];
+        self.path = [[NSBundle mainBundle] pathForImageResource:@"10-Guy"];
         [self reset];
     }
     return self;

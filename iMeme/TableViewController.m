@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         items = [[NSMutableArray alloc] init];
-        NSArray* paths = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpeg" inDirectory:nil];
+        NSArray* paths = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpg" inDirectory:nil];
         for (NSString* filename in paths) {
             NSString* path = [[filename lastPathComponent] stringByDeletingPathExtension];
             NSString* name = [[path stringByReplacingOccurrencesOfString:@"-" withString:@" "] capitalizedString];

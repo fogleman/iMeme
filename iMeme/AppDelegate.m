@@ -103,9 +103,9 @@
 
 - (IBAction)onSave:(id)sender {
     NSSavePanel* panel = [NSSavePanel savePanel];
-    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", nil]];
+    [panel setAllowedFileTypes:[NSArray arrayWithObjects:@"jpg", nil]];
     if ([panel runModal] == NSFileHandlingPanelOKButton) {
-        NSData* data = [self getPNG];
+        NSData* data = [self getJPG];
         [data writeToURL:[panel URL] atomically:YES];
     }
 }
@@ -157,7 +157,7 @@
 }
 
 - (IBAction)onWebsite:(id)sender {
-    NSString* url = @"http://www.michaelfogleman.com/memes/";
+    NSString* url = @"http://www.michaelfogleman.com/imeme/";
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
