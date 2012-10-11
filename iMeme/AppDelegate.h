@@ -13,6 +13,7 @@
     NSWindow* _window;
     Model* model;
     NSImageView *imageView;
+    NSTableView *tableView;
     NSTextField *header;
     NSTextField *footer;
     NSSegmentedControl *headerAlignment;
@@ -21,6 +22,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSImageView *imageView;
+@property (assign) IBOutlet NSTableView *tableView;
 @property (assign) IBOutlet NSTextField *header;
 @property (assign) IBOutlet NSTextField *footer;
 @property (assign) IBOutlet NSSegmentedControl *headerAlignment;

@@ -15,6 +15,7 @@
 
 @synthesize window = _window;
 @synthesize imageView;
+@synthesize tableView;
 @synthesize header;
 @synthesize footer;
 @synthesize headerAlignment;
@@ -26,7 +27,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification {
     model = [[Model alloc] init];
-    [self updateImage];
+//    [self updateImage];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)sender {
@@ -132,6 +133,7 @@
 }
 
 - (IBAction)onReset:(id)sender {
+    [tableView deselectAll:nil];
     [model reset];
     [headerAlignment selectSegmentWithTag:model.headerAlignment];
     [footerAlignment selectSegmentWithTag:model.footerAlignment];

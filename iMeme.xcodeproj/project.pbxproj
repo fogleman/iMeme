@@ -27,7 +27,6 @@
 		690DA6BA16260C2D00C26B63 /* Art-Student-Owl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59416260C2C00C26B63 /* Art-Student-Owl.jpg */; };
 		690DA6BB16260C2D00C26B63 /* Asshole-Ref.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59516260C2C00C26B63 /* Asshole-Ref.jpg */; };
 		690DA6BC16260C2D00C26B63 /* Awkward-Olympics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59616260C2C00C26B63 /* Awkward-Olympics.jpg */; };
-		690DA6BD16260C2D00C26B63 /* Baby-Cry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59716260C2C00C26B63 /* Baby-Cry.jpg */; };
 		690DA6BE16260C2D00C26B63 /* Baby-Godfather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59816260C2C00C26B63 /* Baby-Godfather.jpg */; };
 		690DA6BF16260C2D00C26B63 /* Bad-Advice-Cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59916260C2C00C26B63 /* Bad-Advice-Cat.jpg */; };
 		690DA6C016260C2D00C26B63 /* Bad-Joke-Eel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA59A16260C2C00C26B63 /* Bad-Joke-Eel.jpg */; };
@@ -300,6 +299,7 @@
 		690DA7CB16260C2D00C26B63 /* Yo-Dawg-Heard-You.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA6A516260C2D00C26B63 /* Yo-Dawg-Heard-You.jpg */; };
 		690DA7CC16260C2D00C26B63 /* Zoidberg-Jesus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA6A616260C2D00C26B63 /* Zoidberg-Jesus.jpg */; };
 		690DA7CD16260C2D00C26B63 /* Zura-Janai-Katsura-Da.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690DA6A716260C2D00C26B63 /* Zura-Janai-Katsura-Da.jpg */; };
+		690DA7CF162643D700C26B63 /* startup.png in Resources */ = {isa = PBXBuildFile; fileRef = 690DA7CE162643D700C26B63 /* startup.png */; };
 		6932731014814E670090BA14 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 6932730E14814E670090BA14 /* new.png */; };
 		6932731114814E670090BA14 /* print.png in Resources */ = {isa = PBXBuildFile; fileRef = 6932730F14814E670090BA14 /* print.png */; };
 		6947C8D214846B3C00334D3F /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 6947C8D014846B3C00334D3F /* minus.png */; };
@@ -364,7 +364,6 @@
 		690DA59416260C2C00C26B63 /* Art-Student-Owl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Art-Student-Owl.jpg"; sourceTree = "<group>"; };
 		690DA59516260C2C00C26B63 /* Asshole-Ref.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Asshole-Ref.jpg"; sourceTree = "<group>"; };
 		690DA59616260C2C00C26B63 /* Awkward-Olympics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Awkward-Olympics.jpg"; sourceTree = "<group>"; };
-		690DA59716260C2C00C26B63 /* Baby-Cry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baby-Cry.jpg"; sourceTree = "<group>"; };
 		690DA59816260C2C00C26B63 /* Baby-Godfather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baby-Godfather.jpg"; sourceTree = "<group>"; };
 		690DA59916260C2C00C26B63 /* Bad-Advice-Cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bad-Advice-Cat.jpg"; sourceTree = "<group>"; };
 		690DA59A16260C2C00C26B63 /* Bad-Joke-Eel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bad-Joke-Eel.jpg"; sourceTree = "<group>"; };
@@ -637,6 +636,7 @@
 		690DA6A516260C2D00C26B63 /* Yo-Dawg-Heard-You.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yo-Dawg-Heard-You.jpg"; sourceTree = "<group>"; };
 		690DA6A616260C2D00C26B63 /* Zoidberg-Jesus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Zoidberg-Jesus.jpg"; sourceTree = "<group>"; };
 		690DA6A716260C2D00C26B63 /* Zura-Janai-Katsura-Da.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Zura-Janai-Katsura-Da.jpg"; sourceTree = "<group>"; };
+		690DA7CE162643D700C26B63 /* startup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startup.png; sourceTree = "<group>"; };
 		6932730E14814E670090BA14 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		6932730F14814E670090BA14 /* print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print.png; sourceTree = "<group>"; };
 		6947C8D014846B3C00334D3F /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
@@ -740,7 +740,6 @@
 				690DA59416260C2C00C26B63 /* Art-Student-Owl.jpg */,
 				690DA59516260C2C00C26B63 /* Asshole-Ref.jpg */,
 				690DA59616260C2C00C26B63 /* Awkward-Olympics.jpg */,
-				690DA59716260C2C00C26B63 /* Baby-Cry.jpg */,
 				690DA59816260C2C00C26B63 /* Baby-Godfather.jpg */,
 				690DA59916260C2C00C26B63 /* Bad-Advice-Cat.jpg */,
 				690DA59A16260C2C00C26B63 /* Bad-Joke-Eel.jpg */,
@@ -1090,6 +1089,7 @@
 		69C2ECEE147EE8D400EC7161 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				690DA7CE162643D700C26B63 /* startup.png */,
 				6947C8D014846B3C00334D3F /* minus.png */,
 				6947C8D114846B3C00334D3F /* plus.png */,
 				69B7A1111481D10100ED7BB7 /* bigger.png */,
@@ -1254,7 +1254,6 @@
 				690DA6BA16260C2D00C26B63 /* Art-Student-Owl.jpg in Resources */,
 				690DA6BB16260C2D00C26B63 /* Asshole-Ref.jpg in Resources */,
 				690DA6BC16260C2D00C26B63 /* Awkward-Olympics.jpg in Resources */,
-				690DA6BD16260C2D00C26B63 /* Baby-Cry.jpg in Resources */,
 				690DA6BE16260C2D00C26B63 /* Baby-Godfather.jpg in Resources */,
 				690DA6BF16260C2D00C26B63 /* Bad-Advice-Cat.jpg in Resources */,
 				690DA6C016260C2D00C26B63 /* Bad-Joke-Eel.jpg in Resources */,
@@ -1527,6 +1526,7 @@
 				690DA7CB16260C2D00C26B63 /* Yo-Dawg-Heard-You.jpg in Resources */,
 				690DA7CC16260C2D00C26B63 /* Zoidberg-Jesus.jpg in Resources */,
 				690DA7CD16260C2D00C26B63 /* Zura-Janai-Katsura-Da.jpg in Resources */,
+				690DA7CF162643D700C26B63 /* startup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1609,7 +1609,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -1629,7 +1629,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
 			};
 			name = Release;

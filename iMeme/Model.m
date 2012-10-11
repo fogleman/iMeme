@@ -21,13 +21,13 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.path = [[NSBundle mainBundle] pathForImageResource:@"10-Guy"];
         [self reset];
     }
     return self;
 }
 
 - (void)reset {
+    self.path = [[NSBundle mainBundle] pathForImageResource:@"startup"];
     self.header = @"";
     self.footer = @"";
     self.headerAlignment = NSCenterTextAlignment;

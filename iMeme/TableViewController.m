@@ -10,6 +10,7 @@
 #import "Template.h"
 
 @implementation TableViewController
+
 @synthesize appDelegate;
 @synthesize tableView;
 
@@ -20,7 +21,7 @@
         NSArray* paths = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpg" inDirectory:nil];
         for (NSString* filename in paths) {
             NSString* path = [[filename lastPathComponent] stringByDeletingPathExtension];
-            NSString* name = [[path stringByReplacingOccurrencesOfString:@"-" withString:@" "] capitalizedString];
+            NSString* name = [path stringByReplacingOccurrencesOfString:@"-" withString:@" "];
             path = [[NSBundle mainBundle] pathForImageResource:path];
             [items addObject:[[Template alloc] initWithName:name path:path]];
         }
@@ -39,8 +40,11 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification {
-    Template* template = [items objectAtIndex:[tableView selectedRow]];
-    [appDelegate setPath:[template path]];
+    NSInteger row = [tableView selectedRow];
+    if (row >= 0) {
+        Template* template = [items objectAtIndex:row];
+        [appDelegate setPath:[template path]];
+    }
 }
 
 @end
