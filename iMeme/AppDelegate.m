@@ -27,7 +27,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification {
     model = [[Model alloc] init];
-//    [self updateImage];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)sender {
@@ -173,6 +172,7 @@
     [form addFormField:@"key" withStringData:@"ba24197a8c1cbcff577fcad9bcfe0268"];
     [form addFormField:@"image" withStringData:imageData];
     [form addFormField:@"type" withStringData:@"base64"];
+    [form addFormField:@"caption" withStringData:@"Created with iMeme"];
     NSMutableURLRequest *postRequest = [form mpfRequest];
     NSURLResponse *response;
     NSError *error;
@@ -184,7 +184,7 @@
     }
     SBJsonParser *parser = [[[SBJsonParser alloc] init] autorelease];
     NSDictionary *object = [parser objectWithData:data];
-    NSString *result = [[[object valueForKey:@"upload"] valueForKey:@"links"] valueForKey:@"original"];
+    NSString *result = [[[object valueForKey:@"upload"] valueForKey:@"links"] valueForKey:@"imgur_page"];
     return result;
 }
 
