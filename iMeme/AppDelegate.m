@@ -41,9 +41,10 @@
 }
 
 - (NSData*)getJPG {
+    NSDictionary *properties = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:0.98] forKey:NSImageCompressionFactor];
     NSData* imageData = [[imageView image] TIFFRepresentation];
     NSBitmapImageRep* rep = [NSBitmapImageRep imageRepWithData:imageData];
-    NSData* data = [rep representationUsingType:NSJPEGFileType properties:nil];
+    NSData* data = [rep representationUsingType:NSJPEGFileType properties:properties];
     return data;
 }
 
