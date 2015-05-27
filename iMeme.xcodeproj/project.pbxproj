@@ -95,7 +95,6 @@
 		694EC10816741EA5001E7A16 /* Sad-X-All-The-Y.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09516741EA5001E7A16 /* Sad-X-All-The-Y.jpg */; };
 		694EC10916741EA5001E7A16 /* Say-That-Again-I-Dare-You.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09616741EA5001E7A16 /* Say-That-Again-I-Dare-You.jpg */; };
 		694EC10A16741EA5001E7A16 /* Scumbag-Brain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09716741EA5001E7A16 /* Scumbag-Brain.jpg */; };
-		694EC10B16741EA5001E7A16 /* Scumbag-Girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09816741EA5001E7A16 /* Scumbag-Girl.jpg */; };
 		694EC10C16741EA5001E7A16 /* Scumbag-Minecraft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09916741EA5001E7A16 /* Scumbag-Minecraft.jpg */; };
 		694EC10D16741EA5001E7A16 /* Scumbag-Redditor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09A16741EA5001E7A16 /* Scumbag-Redditor.jpg */; };
 		694EC10E16741EA5001E7A16 /* Scumbag-Steve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 694EC09B16741EA5001E7A16 /* Scumbag-Steve.jpg */; };
@@ -787,7 +786,6 @@
 				694EC10816741EA5001E7A16 /* Sad-X-All-The-Y.jpg in Resources */,
 				694EC10916741EA5001E7A16 /* Say-That-Again-I-Dare-You.jpg in Resources */,
 				694EC10A16741EA5001E7A16 /* Scumbag-Brain.jpg in Resources */,
-				694EC10B16741EA5001E7A16 /* Scumbag-Girl.jpg in Resources */,
 				694EC10C16741EA5001E7A16 /* Scumbag-Minecraft.jpg in Resources */,
 				694EC10D16741EA5001E7A16 /* Scumbag-Redditor.jpg in Resources */,
 				694EC10E16741EA5001E7A16 /* Scumbag-Steve.jpg in Resources */,

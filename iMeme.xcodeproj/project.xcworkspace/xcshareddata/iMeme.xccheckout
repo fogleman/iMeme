@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ECA0BD68-F886-468F-886E-47C1D274C801</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iMeme</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8C8AD442C25B3262F7718BD5550E4534F9BC0B5</key>
+		<string>https://github.com/fogleman/iMeme</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iMeme.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8C8AD442C25B3262F7718BD5550E4534F9BC0B5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fogleman/iMeme</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8C8AD442C25B3262F7718BD5550E4534F9BC0B5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8C8AD442C25B3262F7718BD5550E4534F9BC0B5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iMeme</string>
+		</dict>
+	</array>
+</dict>
+</plist>
